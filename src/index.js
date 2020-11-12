@@ -3,7 +3,7 @@ var http = require("http");
 const httpServer = http.createServer(handleServer);
 const lol = `{phone: '18602100000',email: 'guestcaredominos@jublfood.com'}`;
 
-function handleServer(req, res) {
+function handleServer(rq, rs) {
     if(rq.url ==="/welcome")
     {   
         rs.writeHead(200, { 'Content-Type': 'text/plain' });
