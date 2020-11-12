@@ -10,10 +10,10 @@ function handleServer(req, res) {
   }
   else if(req.url === "/contact"){
       res.statusCode = 200;
-    res.end(JSON.stringify({
+    res.end({
         phone: '18602100000',
         email: 'guestcaredominos@jublfood.com'
-        }));
+        });
   }
   else{
       res.statusCode = 404;
