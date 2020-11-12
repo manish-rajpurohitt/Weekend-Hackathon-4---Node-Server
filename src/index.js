@@ -1,7 +1,7 @@
 var http = require("http");
 
 const httpServer = http.createServer(handleServer);
-
+const lol = `{phone: '18602100000',email: 'guestcaredominos@jublfood.com'}`;
 
 function handleServer(req, res) {
   if(req.url === "/welcome"){
@@ -10,10 +10,7 @@ function handleServer(req, res) {
   }
   else if(req.url === "/contact"){
       res.statusCode = 200;
-    res.end({
-        phone: '18602100000',
-        email: 'guestcaredominos@jublfood.com'
-        });
+    res.end(lol);
   }
   else{
       res.statusCode = 404;
